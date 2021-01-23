@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
-import { WebGadgetComponent } from './web-gadget.component';
 
-
-
+/** 提供與 web2 hosting 環境溝通的 API。 */
 @NgModule({
-  declarations: [WebGadgetComponent],
+  declarations: [],
   imports: [
   ],
-  exports: [WebGadgetComponent]
+  exports: []
 })
 export class WebGadgetModule { }

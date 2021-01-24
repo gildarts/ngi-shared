@@ -2,7 +2,7 @@
 	"folders": [
     {
       "name": "web-gadget",
-      "path": "./projects/web-gadget/src"
+      "path": "./projects/web-gadget"
     },
 		{
       "name": "workspace",

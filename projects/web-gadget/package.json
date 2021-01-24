@@ -1,6 +1,9 @@
 {
   "name": "@1campus/web-gadget",
-  "version": "2.0.2",
+  "version": "2.0.5",
+  "scripts": {
+    "publish": "npm publish --access public"
+  },
   "peerDependencies": {
     "@angular/common": "^11.0.9",
     "@angular/core": "^11.0.9"

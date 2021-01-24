@@ -2,10 +2,33 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.9.
 
-## Code scaffolding
+## 使用方式
+1. 取得 `gadget.js` 放到 `assets/js/gadget.js`。
+1. 參考以下範例修改 `index.html`。
+```html
+<html>
+<head>
+  <script src="assets/js/gadget.js"></script><!---->
+  <script>
+    init({
+      application: "dev.sh_d",
+      oAuth: {
+        clientID: 'client id',
+        clientSecret: 'client secret string',
+        account: '',
+        password: ''
+      },
+      paramValues: {
+      }
+    });
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
 
-Run `ng generate component component-name --project web-gadget` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project web-gadget`.
-> Note: Don't forget to add `--project web-gadget` or else it will be added to the default project in your `angular.json` file. 
+```
 
 ## Build
 
@@ -14,11 +37,3 @@ Run `ng build web-gadget` to build the project. The build artifacts will be stor
 ## Publishing
 
 After building your library with `ng build web-gadget`, go to the dist folder `cd dist/web-gadget` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test web-gadget` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
